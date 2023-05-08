@@ -35,6 +35,7 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
       - name: Send some mail
+      - run: echo Send mail to staff
       - uses: wadeww/send-email-action@master
         with:
           server_address: smtp.gmail.com

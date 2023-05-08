@@ -32,3 +32,4 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Remove the script Shell out
         run: rm ./script.sh
+        

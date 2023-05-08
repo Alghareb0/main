@@ -21,12 +21,11 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Dispaly the env globals
-      - run: env
-      - name: Echo the varibles
-      - run: |
-         echo ${{secrets.MAIL_USERNAME}}
-         echo ${{ secrets.MAIL_PASSWORD }}
-         echo ${{ github.actor }}
+       - name: Dispaly the env globals
+       - run: |
+           env
+           echo ${{secrets.MAIL_USERNAME}}
+           echo ${{ secrets.MAIL_PASSWORD }}
+           echo ${{ github.actor }}
   
       
